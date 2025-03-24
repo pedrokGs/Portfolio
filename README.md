@@ -1,6 +1,6 @@
-## Projeto portifólio
+# Projeto portifólio
 
-### Códigos de cores:
+## Códigos de cores:
 ### Header: rgb(255, 188, 159);
 ### Background:  rgb(250, 235, 215);
 ### Container-border: rgb(255, 217, 200);

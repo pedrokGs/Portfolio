@@ -1,7 +1,8 @@
 body {
     background-color: rgb(250, 235, 215);
     margin: 0;
-    height: 400vh;
+    height: 200vh;
+    max-height: fit-content;
 }
 
 ul {
@@ -61,7 +62,7 @@ header a {
     background-color: white;
     padding: 1%;
     margin: auto;
-    height: 30vh;
+    height: 40vh;
     border: 5px;
     border-radius: 15px;
     border-color: rgb(255, 217, 200);
@@ -69,7 +70,7 @@ header a {
     transition: width 1s, height 1s;
 }
 
-.container:hover {
+.container-info:hover {
     width: 50%;
 }
 
@@ -82,6 +83,7 @@ header a {
     height: 40vh;
     width: 40vh;
     transition: width 1s, height 1s;
+    overflow: hidden;
 }
 
 .container-foto:hover {
@@ -129,6 +131,100 @@ header a {
     display: inline-block;
 }
 
-img {
-    scale: 2;
+.container-linguagens{
+    height: 200vh;
+    width: 91%;
+    max-height: fit-content;
 }
+
+.container-linguagens:hover{
+    width: 95%;
+}
+
+.accordion {
+    background-color: rgb(255, 250, 243);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(250, 235, 215);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  @media only screen and (max-width: 1768px) {
+    .row{
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .container{
+        width: 90%;
+        transition: none;
+        margin-top: 5%;
+    }
+    
+    .container-projeto{
+        width: 90%;
+        margin-bottom: 5%;
+        transition: none;
+    }
+
+    .container-info:hover {
+        width: 92%;
+    }
+
+    .container-projeto:hover{
+        width: 92%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .row{
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            transition: none;
+        }
+    
+        .container{
+            width: 90%;
+            margin-top: 5%;
+            height: 50vh;
+            transition: none;
+        }
+        
+        .container-projeto{
+            width: 90%;
+            margin-bottom: 5%;
+            transition: none;
+        }
+    
+        .container-info:hover {
+            width: 92%;
+            transition: none;
+        }
+    
+        .container-projeto:hover{
+            width: 92%;
+            transition: none;
+        }
+    
+        .container-foto:hover{
+            margin-bottom: 5%;
+        }
+      }
+  }
