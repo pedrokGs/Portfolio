@@ -1,6 +1,134 @@
-header{
+body {
+    background-color: rgb(250, 235, 215);
+    margin: 0;
+    height: 400vh;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+header {
+    background-color: rgb(255, 188, 159);
     height: 8vh;
-    background-color: antiquewhite;
-    max-width: 100%;
-    position: fixed;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.1rem;
+}
+
+.navbar a:hover {
+    transform: scale(2, 2);
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.container {
+    background-color: white;
+    padding: 1%;
+    margin: auto;
+    height: 30vh;
+    border: 5px;
+    border-radius: 15px;
+    border-color: rgb(255, 217, 200);
+    width: 40%;
+    transition: width 1s, height 1s;
+}
+
+.container:hover {
+    width: 50%;
+}
+
+.container-foto {
+    background-color: white;
+    margin: auto;
+    border: 5px;
+    border-radius: 100%;
+    border-color: rgb(255, 217, 200);
+    height: 40vh;
+    width: 40vh;
+    transition: width 1s, height 1s;
+}
+
+.container-foto:hover {
+    height: 50vh;
+    width: 50vh;
+}
+
+.container-projeto {
+    background-color: white;
+    border: 5px;
+    margin: auto;
+    border-radius: 15px;
+    border-color: rgb(255, 217, 200);
+    height: 18vh;
+    width: 25%;
+    padding: 10px;
+    transition: width 1s, height 1s;
+}
+
+.container-projeto:hover {
+    width: 30%;
+}
+
+.projeto-btn {
+    background-color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.projeto-btn:hover {
+    background-color: rgb(0, 132, 219);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    scale: 2;
 }
