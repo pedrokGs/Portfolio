@@ -8,6 +8,6 @@
 ### Button Projeto Hover: rgb(0, 132, 219);
 
 ## Ferramentas utilizadas:
-# HTML
-# CSS
-# Javascript (P/ Menu Accordion)
+### HTML
+### CSS
+### Javascript (P/ Menu Accordion)
